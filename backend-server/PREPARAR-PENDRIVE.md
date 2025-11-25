@@ -8,6 +8,30 @@ Antes de copiar a pasta `backend-server` para o pendrive, você **DEVE** garanti
 
 ## 📋 Passo a Passo
 
+### 💡 Método 1: Instalação Automática (Mais Fácil!)
+
+Na **pasta raiz do projeto** (não na pasta backend-server), execute:
+
+**Windows:**
+```bash
+INSTALAR-TUDO.bat
+```
+
+**Linux/Mac:**
+```bash
+./instalar-tudo.sh
+```
+
+Esse script vai:
+- Verificar se Node.js está instalado
+- Instalar dependências do frontend
+- Instalar dependências do backend
+- Verificar se tudo foi instalado corretamente
+
+**Pronto!** Pule para o passo 3.
+
+### 🔧 Método 2: Instalação Manual
+
 ### 1. Verificar Node.js
 
 Abra o terminal/prompt de comando e execute:

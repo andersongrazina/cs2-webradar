@@ -10,6 +10,22 @@ Este é o servidor backend portátil para o CS2 Webradar. Ele recebe dados do Co
 
 ## 🚀 Instalação Rápida
 
+### 💡 Instalação Automática (Recomendado)
+
+Na pasta raiz do projeto, execute:
+
+**Windows:**
+```bash
+INSTALAR-TUDO.bat
+```
+
+**Linux/Mac:**
+```bash
+./instalar-tudo.sh
+```
+
+Isso instalará automaticamente as dependências do frontend E do backend!
+
 ### ⚠️ ANTES DE COPIAR - LEIA PREPARAR-PENDRIVE.md
 
 **IMPORTANTE:** Antes de copiar para o pendrive, você **DEVE** executar `npm install` nesta pasta para instalar as dependências. Veja instruções detalhadas em `PREPARAR-PENDRIVE.md`.
