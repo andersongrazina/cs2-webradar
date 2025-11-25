@@ -1,0 +1,135 @@
+{
+  "provider": {
+    "name": "Counter-Strike: Global Offensive",
+    "appid": 730,
+    "version": 13954,
+    "steamid": "76561198012345678",
+    "timestamp": 1234567890
+  },
+  "map": {
+    "mode": "competitive",
+    "name": "de_dust2",
+    "phase": "live",
+    "round": 5,
+    "team_ct": {
+      "score": 3,
+      "consecutive_round_losses": 0,
+      "timeouts_remaining": 1,
+      "matches_won_this_series": 0
+    },
+    "team_t": {
+      "score": 2,
+      "consecutive_round_losses": 0,
+      "timeouts_remaining": 1,
+      "matches_won_this_series": 0
+    },
+    "num_matches_to_win_series": 0,
+    "current_spectators": 0,
+    "souvenirs_total": 0
+  },
+  "round": {
+    "phase": "live"
+  },
+  "player": {
+    "steamid": "76561198012345678",
+    "name": "Player1",
+    "observer_slot": 0,
+    "team": "CT",
+    "activity": "playing",
+    "state": {
+      "health": 100,
+      "armor": 100,
+      "helmet": true,
+      "flashed": 0,
+      "smoked": 0,
+      "burning": 0,
+      "money": 4000,
+      "round_kills": 1,
+      "round_killhs": 0,
+      "round_totaldmg": 75,
+      "equip_value": 3700,
+      "defusekit": true
+    },
+    "match_stats": {
+      "kills": 12,
+      "assists": 3,
+      "deaths": 5,
+      "mvps": 2,
+      "score": 32
+    },
+    "weapons": {
+      "weapon_0": {
+        "name": "weapon_ak47",
+        "paintkit": "default",
+        "type": "Rifle",
+        "state": "active",
+        "ammo_clip": 30,
+        "ammo_clip_max": 30,
+        "ammo_reserve": 90
+      },
+      "weapon_1": {
+        "name": "weapon_glock",
+        "paintkit": "default",
+        "type": "Pistol",
+        "state": "holstered",
+        "ammo_clip": 20,
+        "ammo_clip_max": 20,
+        "ammo_reserve": 120
+      },
+      "weapon_2": {
+        "name": "weapon_hegrenade",
+        "paintkit": "default",
+        "type": "Grenade",
+        "state": "holstered"
+      },
+      "weapon_3": {
+        "name": "weapon_smokegrenade",
+        "paintkit": "default",
+        "type": "Grenade",
+        "state": "holstered"
+      },
+      "weapon_4": {
+        "name": "weapon_knife",
+        "paintkit": "default",
+        "type": "Knife",
+        "state": "holstered"
+      }
+    },
+    "position": "-1234.56, 789.12, 64.00",
+    "forward": "0.123, -0.456, 0.000"
+  },
+  "bomb": {
+    "state": "carried",
+    "position": "-1234.56, 789.12, 64.00",
+    "player": "76561198012345678"
+  },
+  "allplayers": {
+    "76561198012345678": {
+      "name": "Player1",
+      "observer_slot": 0,
+      "team": "CT",
+      "state": {
+        "health": 100,
+        "armor": 100,
+        "helmet": true,
+        "money": 4000,
+        "round_kills": 1,
+        "equip_value": 3700,
+        "defusekit": true
+      },
+      "match_stats": {
+        "kills": 12,
+        "assists": 3,
+        "deaths": 5,
+        "mvps": 2,
+        "score": 32
+      },
+      "position": "-1234.56, 789.12, 64.00",
+      "forward": "0.123, -0.456, 0.000"
+    }
+  },
+  "phase_countdowns": {
+    "phase": "live",
+    "phase_ends_in": "35.4"
+  }
+}

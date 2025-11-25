@@ -34,7 +34,7 @@ localPort = 5000
 externalPort = 80
 
 [[ports]]
-localPort = 46387
+localPort = 46205
 externalPort = 3000
 
 [deployment]
@@ -42,3 +42,11 @@ deploymentTarget = "autoscale"
 build = ["npm", "run", "build"]
 publicDir = "out"
 run = ["npm", "start"]
+
+[userenv]
+
+[userenv.development]
+NEXT_PUBLIC_WEBRADAR_HTTP = "http://localhost:3000"
+NEXT_PUBLIC_WEBRADAR_SOCKET = "ws://localhost:3000"
+NEXT_PUBLIC_WEBRADAR_SSE_ENDPOINT = "/webradar/sse"
+NEXT_PUBLIC_WEBRADAR_SOCKET_ENDPOINT = "/webradar/socket"
