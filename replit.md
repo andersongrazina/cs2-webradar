@@ -97,7 +97,42 @@ O backend portátil está configurado para rodar na porta 3000 localmente.
   - Complete Portuguese documentation for pendrive usage
   - Configured environment variables to connect to localhost:3000
 
+- **2025-11-25**: Created automated installation scripts
+  - `INSTALAR-TUDO.bat` - Windows installation script
+  - `instalar-tudo.sh` - Linux/Mac installation script
+  - Both scripts install frontend and backend dependencies automatically
+  - Validate installation and provide clear success/failure messages
+  - Updated all documentation to reference new installation methods
+
 ## Development
+
+### Quick Installation (Recommended)
+
+Install all dependencies automatically:
+
+**Windows:**
+```bash
+INSTALAR-TUDO.bat
+```
+
+**Linux/Mac:**
+```bash
+./instalar-tudo.sh
+```
+
+### Manual Installation
+
+Install frontend dependencies:
+```bash
+npm install
+```
+
+Install backend dependencies:
+```bash
+cd backend-server
+npm install
+cd ..
+```
 
 ### Running Locally
 ```bash
