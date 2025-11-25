@@ -13,15 +13,5 @@ echo antes de executar este teste!
 echo.
 pause
 echo.
-echo Enviando dados de teste...
-curl -X POST http://localhost:3000/webradar -H "Content-Type: application/json" -d @test-data.json
-echo.
-echo.
-echo Testando endpoint de saude...
-curl http://localhost:3000/health
-echo.
-echo.
-echo ============================================
-echo Teste concluido!
-echo ============================================
+node test-backend.js
 pause
