@@ -105,15 +105,26 @@ function transformPlayer(playerData, isLocal = false, index = 0, bombCarrier = n
 
   const team = teamMap[playerData.team] || playerData.team;
 
-  // Parse de posição
+  // Parse de posição - GARANTE que sempre tem valores
   let position = { x: 0, y: 0, z: 0 };
-  if (playerData.position && typeof playerData.position === 'string') {
-    const coords = playerData.position.split(',').map(c => parseFloat(c.trim()));
-    if (coords.length >= 3) {
-      position = { x: coords[0], y: coords[1], z: coords[2] };
+  if (playerData.position) {
+    if (typeof playerData.position === 'string') {
+      const coords = playerData.position.split(',').map(c => parseFloat(c.trim()));
+      if (coords.length >= 3 && !isNaN(coords[0]) && !isNaN(coords[1])) {
+        position = { x: coords[0], y: coords[1], z: coords[2] || 0 };
+      }
+    } else if (typeof playerData.position === 'object') {
+      position = {
+        x: playerData.position.x || 0,
+        y: playerData.position.y || 0,
+        z: playerData.position.z || 0
+      };
     }
-  } else if (playerData.position && typeof playerData.position === 'object') {
-    position = playerData.position;
+  }
+  
+  // Se ainda estiver vazio/0, usa uma posição neutra para debug
+  if (!position.x && !position.y) {
+    console.log(`[Transform DEBUG] Player ${playerData.name} tem posição vazia:`, playerData.position);
   }
 
   // Parse de direção

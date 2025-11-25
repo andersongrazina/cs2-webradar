@@ -114,32 +114,15 @@ function RadarMain({ radar }: RadarMainProps) {
       allPlayers.push(...gameData.players);
     }
 
-    console.debug(`[RadarMain] Total players to filter: ${allPlayers.length}`, {
+    console.log(`[RadarMain] Total players to filter: ${allPlayers.length}`, {
       localPlayer: gameData.local_player?.nickname,
       otherPlayers: gameData.players?.length || 0
     });
 
-    const players = allPlayers
-      .filter(
-        (player) => {
-          const passes = player &&
-            typeof player === 'object' &&
-            player.alive &&
-            (player.health || player.health === 0) &&
-            player.position &&
-            (player.position.x !== 0 || player.position.y !== 0);
-          
-          if (!passes) {
-            console.debug(`[RadarMain] Player filtered out:`, {
-              nickname: player?.nickname,
-              alive: player?.alive,
-              health: player?.health,
-              position: player?.position
-            });
-          }
-          return passes;
-        }
-      )
+    const filteredPlayers = allPlayers.filter(p => p && typeof p === 'object');
+    console.log(`[RadarMain] Filtered to valid objects: ${filteredPlayers.length} players`);
+    
+    const players = filteredPlayers
       .map((player) => {
         const customPlayer = player as CustomPlayer;
         const playerRadarPosition = getRadarPosition(
@@ -179,6 +162,7 @@ function RadarMain({ radar }: RadarMainProps) {
         };
       });
 
+    console.log(`[RadarMain] Jogadores a renderizar no radar: ${players.length}`);
     return players;
   }, [
     gameData,

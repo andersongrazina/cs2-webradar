@@ -32,9 +32,10 @@ export const GameProvider = ({ children }: { children: React.ReactNode }) => {
     eventSource.onmessage = (event: MessageEvent) => {
       const gameData: GameData = JSON.parse(event?.data ?? null);
       
-      console.debug('[SSE Data] Recebido:', {
+      console.log('[SSE Data] Recebido:', {
         map: gameData?.map,
         localPlayer: gameData?.local_player?.nickname,
+        localPlayerPos: gameData?.local_player?.position,
         totalPlayers: gameData?.players?.length || 0,
         bombState: gameData?.bomb?.state
       });
