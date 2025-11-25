@@ -38,13 +38,23 @@ io.on('connection', (socket) => {
 });
 
 app.post('/webradar', (req, res) => {
+  // Debug: Mostra estrutura dos dados recebidos
+  const rawData = req.body;
+  console.log(`[GSI DEBUG] Dados brutos recebidos:`);
+  console.log(`  - Mapa: ${rawData.map?.name || 'N/A'}`);
+  console.log(`  - Jogador local: ${rawData.player?.name || 'N/A'}`);
+  console.log(`  - allplayers: ${Object.keys(rawData.allplayers || {}).length}`);
+  console.log(`  - players: ${Object.keys(rawData.players || {}).length}`);
+  
   // Transforma dados brutos do GSI para o formato do frontend
   const transformedData = transformGSIData(req.body);
   
   if (transformedData) {
     latestGameData = transformedData;
     
-    console.log(`[GSI] Dados recebidos do CS2 - Mapa: ${transformedData.map || 'N/A'} - Jogadores: ${transformedData.players.length}`);
+    const totalPlayers = transformedData.local_player ? (transformedData.players.length + 1) : transformedData.players.length;
+    console.log(`[GSI] Dados transformados - Mapa: ${transformedData.map || 'N/A'} - Total de jogadores: ${totalPlayers}`);
+    console.log(`      Local: ${transformedData.local_player?.nickname || 'N/A'} | Outros: ${transformedData.players.length}`);
     
     io.emit('data', latestGameData);
     

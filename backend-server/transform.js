@@ -23,12 +23,24 @@ function transformGSIData(gsiData) {
   const localPlayer = transformPlayer(gsiData.player, true, 0, bombCarrier);
   
   // Pega todos os outros jogadores (se houver)
+  // CS2 GSI envia em "allplayers" ou "players" dependendo da versão
   let allPlayers = [];
-  if (gsiData.players && typeof gsiData.players === 'object') {
-    // GSI envia jogadores como um objeto com keys numéricas
-    allPlayers = Object.values(gsiData.players)
-      .filter(p => p && p.steamid !== gsiData.player?.steamid)
-      .map((p, index) => transformPlayer(p, false, index + 1, bombCarrier))
+  const playersData = gsiData.allplayers || gsiData.players || {};
+  
+  if (playersData && typeof playersData === 'object' && Object.keys(playersData).length > 0) {
+    const localSteamId = gsiData.player?.steamid;
+    let playerIndex = 1;
+    
+    allPlayers = Object.entries(playersData)
+      .filter(([steamId, p]) => {
+        // Filtra o jogador local para não duplicar
+        return steamId !== localSteamId && p;
+      })
+      .map(([steamId, p]) => {
+        const transformed = transformPlayer(p, false, playerIndex, bombCarrier);
+        playerIndex++;
+        return transformed;
+      })
       .filter(p => p !== null); // Remove qualquer jogador null
   }
 
