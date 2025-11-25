@@ -22,6 +22,11 @@ function transformGSIData(gsiData) {
   // Pega o jogador local
   const localPlayer = transformPlayer(gsiData.player, true, 0, bombCarrier);
   
+  // Debug
+  if (localPlayer) {
+    console.log(`[Transform] Local player: ${localPlayer.nickname} | pos: ${JSON.stringify(localPlayer.position)} | health: ${localPlayer.health} | alive: ${localPlayer.alive}`);
+  }
+  
   // Pega todos os outros jogadores (se houver)
   // CS2 GSI envia em "allplayers" ou "players" dependendo da versão
   let allPlayers = [];
@@ -46,6 +51,7 @@ function transformGSIData(gsiData) {
 
   // Garante que local_player é válido
   if (!localPlayer) {
+    console.log(`[Transform] ⚠️  Local player é null!`);
     return getDefaultGameData();
   }
 

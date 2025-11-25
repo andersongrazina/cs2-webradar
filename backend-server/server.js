@@ -48,9 +48,14 @@ app.post('/webradar', (req, res) => {
   console.log(`  - players keys: ${Object.keys(rawData.players || {})}`);
   console.log(`  - players count: ${Object.keys(rawData.players || {}).length}`);
   
-  // Debug: Mostra a estrutura de allplayers
-  if (rawData.allplayers && Object.keys(rawData.allplayers).length > 0) {
-    console.log(`[GSI DEBUG] Estrutura allplayers:`, JSON.stringify(Object.keys(rawData.allplayers).slice(0, 3)));
+  // Debug: Mostra dados do jogador local
+  if (rawData.player) {
+    console.log(`[GSI DEBUG] Jogador local detalhes:`, {
+      name: rawData.player.name,
+      health: rawData.player.state?.health,
+      position: rawData.player.position,
+      team: rawData.player.team
+    });
   }
   
   // Transforma dados brutos do GSI para o formato do frontend
