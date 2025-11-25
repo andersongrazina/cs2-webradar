@@ -38,23 +38,21 @@ io.on('connection', (socket) => {
 });
 
 app.post('/webradar', (req, res) => {
-  // Debug: Mostra estrutura dos dados recebidos
   const rawData = req.body;
-  console.log(`[GSI DEBUG] Dados brutos recebidos:`);
-  console.log(`  - Mapa: ${rawData.map?.name || 'N/A'}`);
-  console.log(`  - Jogador local: ${rawData.player?.name || 'N/A'}`);
-  console.log(`  - allplayers keys: ${Object.keys(rawData.allplayers || {})}`);
-  console.log(`  - allplayers count: ${Object.keys(rawData.allplayers || {}).length}`);
-  console.log(`  - players keys: ${Object.keys(rawData.players || {})}`);
-  console.log(`  - players count: ${Object.keys(rawData.players || {}).length}`);
   
-  // Debug: Mostra dados do jogador local
+  // Debug COMPLETO: Mostra TODOS os campos que o CS2 envia
+  console.log(`\n[GSI COMPLETO] Estrutura de dados recebida do CS2:`);
+  console.log(JSON.stringify(rawData, null, 2));
+  
+  // Se tiver player, mostra cada campo
   if (rawData.player) {
-    console.log(`[GSI DEBUG] Jogador local detalhes:`, {
-      name: rawData.player.name,
-      health: rawData.player.state?.health,
-      position: rawData.player.position,
-      team: rawData.player.team
+    console.log(`\n[GSI PLAYER] Campos do jogador:`);
+    Object.entries(rawData.player).forEach(([key, value]) => {
+      if (typeof value === 'object') {
+        console.log(`  ${key}:`, JSON.stringify(value));
+      } else {
+        console.log(`  ${key}:`, value);
+      }
     });
   }
   
