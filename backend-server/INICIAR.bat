@@ -18,7 +18,30 @@ if %errorlevel% neq 0 (
 
 echo Node.js encontrado!
 echo.
+
+REM Verificar se node_modules existe
+if not exist "node_modules\" (
+    echo [INFO] Dependencias nao encontradas. Instalando...
+    echo.
+    npm install
+    if %errorlevel% neq 0 (
+        color 0C
+        echo.
+        echo [ERRO] Falha ao instalar dependencias!
+        echo.
+        echo Tente executar manualmente:
+        echo   npm install
+        echo.
+        pause
+        exit /b 1
+    )
+    echo.
+    echo [OK] Dependencias instaladas com sucesso!
+    echo.
+)
+
 echo Iniciando servidor...
 echo.
+color 0E
 node server.js
 pause
