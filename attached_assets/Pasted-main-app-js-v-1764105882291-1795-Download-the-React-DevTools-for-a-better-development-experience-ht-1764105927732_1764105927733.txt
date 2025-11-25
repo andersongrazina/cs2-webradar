@@ -1,0 +1,354 @@
+main-app.js?v=1764105882291:1795 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+use-wake-lock.tsx:6 [screen-wake-lock]: Calling `release` before `request` has no effect.
+warn @ use-wake-lock.tsx:6
+eval @ use-wake-lock.tsx:69
+eval @ page.tsx:28
+safelyCallDestroy @ react-dom.development.js:20869
+commitHookEffectListUnmount @ react-dom.development.js:21051
+invokePassiveEffectUnmountInDEV @ react-dom.development.js:24033
+invokeEffectsInDev @ react-dom.development.js:26852
+legacyCommitDoubleInvokeEffectsInDEV @ react-dom.development.js:26829
+commitDoubleInvokeEffectsInDEV @ react-dom.development.js:26816
+flushPassiveEffectsImpl @ react-dom.development.js:26514
+flushPassiveEffects @ react-dom.development.js:26438
+commitRootImpl @ react-dom.development.js:26337
+commitRoot @ react-dom.development.js:26077
+performSyncWorkOnRoot @ react-dom.development.js:24925
+flushSyncWorkAcrossRoots_impl @ react-dom.development.js:7758
+flushSyncWorkOnAllRoots @ react-dom.development.js:7718
+flushPassiveEffectsImpl @ react-dom.development.js:26518
+flushPassiveEffects @ react-dom.development.js:26438
+eval @ react-dom.development.js:26172
+workLoop @ scheduler.development.js:256
+flushWork @ scheduler.development.js:225
+performWorkUntilDeadline @ scheduler.development.js:534
+Show 19 more frames
+Show lessUnderstand this warning
+GameProvider.tsx:29 SSE connection has been established.
+GameProvider.tsx:35 [SSE Data] Recebido: {map: '', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, localPlayerHealth: 0, totalPlayers: 0, …}bombState: "unknown"fullLocalPlayer: "{\"index\":0,\"steamid3\":76561198077088290,\"alive\":false,\"color\":4886754,\"nickname\":\"Andernoia - No Lag No Kill\",\"health\":0,\"armor\":0,\"has_helmet\":false,\"money\":0,\"weapons\":[],\"has_bomb\":false,\"has_defuser\":false,\"flash_alpha\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0},\"view_angles\":{\"x\":0,\"y\":0}}"localPlayer: "Andernoia - No Lag No Kill"localPlayerHealth: 0localPlayerPos: {x: 0, y: 0, z: 0}map: ""totalPlayers: 0[[Prototype]]: Object
+GameProvider.tsx:35 [SSE Data] Recebido: {map: '', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, localPlayerHealth: 0, totalPlayers: 0, …}bombState: "unknown"fullLocalPlayer: "{\"index\":0,\"steamid3\":76561198077088290,\"alive\":false,\"color\":4886754,\"nickname\":\"Andernoia - No Lag No Kill\",\"health\":0,\"armor\":0,\"has_helmet\":false,\"money\":0,\"weapons\":[],\"has_bomb\":false,\"has_defuser\":false,\"flash_alpha\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0},\"view_angles\":{\"x\":0,\"y\":0}}"localPlayer: "Andernoia - No Lag No Kill"localPlayerHealth: 0localPlayerPos: {x: 0, y: 0, z: 0}map: ""totalPlayers: 0[[Prototype]]: Object
+GameProvider.tsx:35 [SSE Data] Recebido: {map: '', localPlayer: undefined, localPlayerPos: undefined, localPlayerHealth: undefined, totalPlayers: 0, …}bombState: "unknown"fullLocalPlayer: "null"localPlayer: undefinedlocalPlayerHealth: undefinedlocalPlayerPos: undefinedmap: ""totalPlayers: 0[[Prototype]]: Object
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_mirage', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, localPlayerHealth: 100, totalPlayers: 0, …}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_mirage', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, localPlayerHealth: 100, totalPlayers: 0, …}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_mirage', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, localPlayerHealth: 100, totalPlayers: 0, …}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_mirage', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, localPlayerHealth: 100, totalPlayers: 0, …}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_mirage', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, localPlayerHealth: 100, totalPlayers: 0, …}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_mirage', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, localPlayerHealth: 100, totalPlayers: 0, …}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_mirage', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, localPlayerHealth: 100, totalPlayers: 0, …}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_mirage', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, localPlayerHealth: 100, totalPlayers: 0, …}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_mirage', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, localPlayerHealth: 100, totalPlayers: 0, …}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_mirage', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, localPlayerHealth: 100, totalPlayers: 0, …}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_mirage', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, localPlayerHealth: 100, totalPlayers: 0, …}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_mirage', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, localPlayerHealth: 100, totalPlayers: 0, …}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_mirage', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, localPlayerHealth: 100, totalPlayers: 0, …}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_mirage', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, localPlayerHealth: 100, totalPlayers: 0, …}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_mirage', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, localPlayerHealth: 100, totalPlayers: 0, …}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_mirage', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, localPlayerHealth: 100, totalPlayers: 0, …}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_mirage', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, localPlayerHealth: 100, totalPlayers: 0, …}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_mirage', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, localPlayerHealth: 100, totalPlayers: 0, …}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_mirage', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, localPlayerHealth: 100, totalPlayers: 0, …}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_mirage', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, localPlayerHealth: 100, totalPlayers: 0, …}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_mirage', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, localPlayerHealth: 100, totalPlayers: 0, …}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_mirage', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, localPlayerHealth: 100, totalPlayers: 0, …}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_mirage', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, localPlayerHealth: 100, totalPlayers: 0, …}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_mirage', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, localPlayerHealth: 100, totalPlayers: 0, …}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(0,0)
+RadarMain.tsx:161 [RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (0, 0)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(570.259765625,244.5708984375)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(570.259765625,244.5708984375)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+warn-once.js:16 Image with src "/maps/de_mirage/radar.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+warnOnce @ warn-once.js:16
+eval @ image-component.js:90
+Promise.then
+handleLoading @ image-component.js:37
+onLoad @ image-component.js:201
+callCallback @ react-dom.development.js:20565
+invokeGuardedCallbackImpl @ react-dom.development.js:20614
+invokeGuardedCallback @ react-dom.development.js:20689
+invokeGuardedCallbackAndCatchFirstError @ react-dom.development.js:20703
+executeDispatch @ react-dom.development.js:32128
+processDispatchQueueItemsInOrder @ react-dom.development.js:32160
+processDispatchQueue @ react-dom.development.js:32173
+dispatchEventsForPlugins @ react-dom.development.js:32184
+eval @ react-dom.development.js:32374
+batchedUpdates$1 @ react-dom.development.js:24953
+batchedUpdates @ react-dom.development.js:28844
+dispatchEventForPluginEventSystem @ react-dom.development.js:32373
+dispatchEvent @ react-dom.development.js:30141
+load
+addEventBubbleListener @ react-dom.development.js:30361
+addTrappedEventListener @ react-dom.development.js:32277
+listenToNonDelegatedEvent @ react-dom.development.js:32199
+setInitialProperties @ react-dom.development.js:33709
+finalizeInitialChildren @ react-dom.development.js:35515
+completeWork @ react-dom.development.js:19782
+completeUnitOfWork @ react-dom.development.js:25963
+performUnitOfWork @ react-dom.development.js:25759
+workLoopSync @ react-dom.development.js:25464
+renderRootSync @ react-dom.development.js:25419
+performConcurrentWorkOnRoot @ react-dom.development.js:24504
+workLoop @ scheduler.development.js:256
+flushWork @ scheduler.development.js:225
+performWorkUntilDeadline @ scheduler.development.js:534
+Show 31 more frames
+Show lessUnderstand this warning
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}localPlayer: "Andernoia - No Lag No Kill"otherPlayers: 0[[Prototype]]: Object
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(388.7375183105469,263.5617095947266)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(388.7375183105469,263.5617095947266)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(715.314453125,304.79355468750003)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:138 [RadarMain] Player Andernoia - No Lag No Kill: pos=(0,0) -> radar=(646,342.6) -> scaled=(715.314453125,304.79355468750003)
+RadarMain.tsx:176 [RadarMain] Jogadores a renderizar no radar: 1
