@@ -31,6 +31,13 @@ export const GameProvider = ({ children }: { children: React.ReactNode }) => {
 
     eventSource.onmessage = (event: MessageEvent) => {
       const gameData: GameData = JSON.parse(event?.data ?? null);
+      
+      console.debug('[SSE Data] Recebido:', {
+        map: gameData?.map,
+        localPlayer: gameData?.local_player?.nickname,
+        totalPlayers: gameData?.players?.length || 0,
+        bombState: gameData?.bomb?.state
+      });
 
       const mapName =
         gameData?.map && gameData.map in Map ? gameData.map : "<unsupported>";

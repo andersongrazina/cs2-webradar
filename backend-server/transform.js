@@ -154,15 +154,15 @@ function transformPlayer(playerData, isLocal = false, index = 0, bombCarrier = n
     color: colorNum,
     nickname: playerData.name || `Player ${index}`,
     team: team,
-    health: state.health || 0,
-    armor: state.armor || 0,
+    health: Math.max(0, state.health || 0),
+    armor: Math.max(0, state.armor || 0),
     has_helmet: state.helmet || false,
-    money: state.money || 0,
+    money: Math.max(0, state.money || 0),
     weapons: weapons.map(w => w.id) || [],
     has_bomb: playerData.steamid === bombCarrier ? true : false,
     has_defuser: state.defusekit || false,
-    flash_alpha: state.flashed || 0,
-    position: position,
+    flash_alpha: Math.max(0, state.flashed || 0),
+    position: position || { x: 0, y: 0, z: 0 },
     view_angles: { x: 0, y: 0 }
   };
 }

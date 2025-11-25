@@ -108,12 +108,20 @@ function RadarMain({ radar }: RadarMainProps) {
   const players: CustomPlayer[] = useMemo(() => {
     if (!gameData || !mapData) return [];
 
-    const players = [gameData.local_player, ...gameData.players]
+    const allPlayers = [];
+    if (gameData.local_player) allPlayers.push(gameData.local_player);
+    if (gameData.players && Array.isArray(gameData.players)) {
+      allPlayers.push(...gameData.players);
+    }
+
+    const players = allPlayers
       .filter(
         (player) =>
           player &&
+          typeof player === 'object' &&
           player.alive &&
           player.health &&
+          player.position &&
           (player.position.x || player.position.y)
       )
       .map((player) => {
