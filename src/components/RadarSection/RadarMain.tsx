@@ -135,6 +135,8 @@ function RadarMain({ radar }: RadarMainProps) {
         const scaledY =
           (playerRadarPosition.y / mapData.height) * effectiveHeight + offsetY;
 
+        console.log(`[RadarMain] Player ${customPlayer.nickname}: pos=(${customPlayer.position.x},${customPlayer.position.y}) -> radar=(${playerRadarPosition.x},${playerRadarPosition.y}) -> scaled=(${scaledX},${scaledY})`);
+
         const importantWeapon = getImportantWeapons(
           importantWeapons,
           customPlayer.weapons
@@ -150,12 +152,21 @@ function RadarMain({ radar }: RadarMainProps) {
 
         playerRotationsRef.current.set(customPlayer.index, newRotation);
 
+        // TESTE TEMPORÁRIO: Se a posição é 0,0, coloca no meio do mapa para visualizar
+        let finalX = scaledX;
+        let finalY = scaledY;
+        if (scaledX === 0 && scaledY === 0) {
+          finalX = effectiveWidth / 2 + offsetX;
+          finalY = effectiveHeight / 2 + offsetY;
+          console.log(`[RadarMain] ⚠️ Posição 0,0 detectada - colocando no meio: (${finalX}, ${finalY})`);
+        }
+
         return {
           ...customPlayer,
           position: {
             ...playerRadarPosition,
-            x: scaledX,
-            y: scaledY,
+            x: finalX,
+            y: finalY,
           },
           importantWeapon,
           rotationAngle: newRotation,

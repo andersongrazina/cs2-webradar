@@ -5,7 +5,7 @@ export const getRadarPosition = (
   map: MapData
 ) => {
   if (!position || !map) return { x: 0, y: 0, z: 0 };
-  if (!position.x || !position.y) return { x: 0, y: 0, z: 0 };
+  if (position.x === undefined || position.y === undefined) return { x: 0, y: 0, z: 0 };
   if (!map.pos_x || !map.pos_y || !map.scale) return { x: 0, y: 0, z: 0 };
 
   const x = (position.x - map.pos_x) / map.scale;
