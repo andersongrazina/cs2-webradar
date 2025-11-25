@@ -111,6 +111,7 @@ function RadarMain({ radar }: RadarMainProps) {
     const players = [gameData.local_player, ...gameData.players]
       .filter(
         (player) =>
+          player &&
           player.alive &&
           player.health &&
           (player.position.x || player.position.y)
