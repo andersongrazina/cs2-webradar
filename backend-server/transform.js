@@ -98,7 +98,19 @@ function getDefaultGameData() {
  */
 function transformPlayer(playerData, isLocal = false, index = 0, bombCarrier = null) {
   if (!playerData) {
+    console.log(`[Transform] PlayerData é null! isLocal=${isLocal}`);
     return null;
+  }
+
+  if (isLocal) {
+    console.log(`[Transform] RAW CS2 player data:`, {
+      name: playerData.name,
+      team: playerData.team,
+      position_raw: playerData.position,
+      position_type: typeof playerData.position,
+      state: playerData.state,
+      alive: (playerData.state?.health || 0) > 0
+    });
   }
 
   // Mapeia time do CS2 para o sistema interno
@@ -115,22 +127,22 @@ function transformPlayer(playerData, isLocal = false, index = 0, bombCarrier = n
   let position = { x: 0, y: 0, z: 0 };
   if (playerData.position) {
     if (typeof playerData.position === 'string') {
+      // CS2 GSI pode enviar como "x, y, z"
       const coords = playerData.position.split(',').map(c => parseFloat(c.trim()));
-      if (coords.length >= 3 && !isNaN(coords[0]) && !isNaN(coords[1])) {
+      if (coords.length >= 2 && !isNaN(coords[0]) && !isNaN(coords[1])) {
         position = { x: coords[0], y: coords[1], z: coords[2] || 0 };
+        if (isLocal) console.log(`[Transform] Position parsed from string:`, position);
       }
-    } else if (typeof playerData.position === 'object') {
+    } else if (typeof playerData.position === 'object' && playerData.position !== null) {
       position = {
-        x: playerData.position.x || 0,
-        y: playerData.position.y || 0,
-        z: playerData.position.z || 0
+        x: typeof playerData.position.x === 'number' ? playerData.position.x : parseFloat(playerData.position.x) || 0,
+        y: typeof playerData.position.y === 'number' ? playerData.position.y : parseFloat(playerData.position.y) || 0,
+        z: typeof playerData.position.z === 'number' ? playerData.position.z : parseFloat(playerData.position.z) || 0
       };
+      if (isLocal) console.log(`[Transform] Position parsed from object:`, position);
     }
-  }
-  
-  // Se ainda estiver vazio/0, usa uma posição neutra para debug
-  if (!position.x && !position.y) {
-    console.log(`[Transform DEBUG] Player ${playerData.name} tem posição vazia:`, playerData.position);
+  } else {
+    if (isLocal) console.log(`[Transform] ⚠️ Position é null/undefined!`);
   }
 
   // Parse de direção
