@@ -1,6 +1,11 @@
+const { getSpawnPosition } = require('./spawn-points');
+
 /**
  * Transforma dados brutos do CS2 GSI para o formato esperado pelo frontend
  * SEMPRE retorna um objeto válido, mesmo que incompleto
+ * 
+ * NOTA IMPORTANTE: CS2 versão 2024+ NÃO envia campo "position" via GSI.
+ * Quando position não está disponível, usamos spawn points aproximados como fallback.
  */
 function transformGSIData(gsiData) {
   // Retorna objeto vazio se não houver dados
@@ -20,7 +25,7 @@ function transformGSIData(gsiData) {
   const bombCarrier = gsiData.bomb?.player || null;
   
   // Pega o jogador local
-  const localPlayer = transformPlayer(gsiData.player, true, 0, bombCarrier);
+  const localPlayer = transformPlayer(gsiData.player, true, 0, bombCarrier, mapName);
   
   // Debug
   if (localPlayer) {
@@ -48,7 +53,7 @@ function transformGSIData(gsiData) {
         return steamId !== localSteamId && p;
       })
       .map(([steamId, p]) => {
-        const transformed = transformPlayer(p, false, playerIndex, bombCarrier);
+        const transformed = transformPlayer(p, false, playerIndex, bombCarrier, mapName);
         playerIndex++;
         return transformed;
       })
@@ -96,7 +101,7 @@ function getDefaultGameData() {
 /**
  * Transforma dados de um jogador individual
  */
-function transformPlayer(playerData, isLocal = false, index = 0, bombCarrier = null) {
+function transformPlayer(playerData, isLocal = false, index = 0, bombCarrier = null, mapName = '') {
   if (!playerData) {
     console.log(`[Transform] PlayerData é null! isLocal=${isLocal}`);
     return null;
@@ -142,7 +147,12 @@ function transformPlayer(playerData, isLocal = false, index = 0, bombCarrier = n
       if (isLocal) console.log(`[Transform] Position parsed from object:`, position);
     }
   } else {
-    if (isLocal) console.log(`[Transform] ⚠️ Position é null/undefined!`);
+    // CS2 2024+ não envia position via GSI - usar spawn points como fallback
+    const slot = playerData.observer_slot || index || 0;
+    position = getSpawnPosition(mapName, team, slot);
+    if (isLocal) {
+      console.log(`[Transform] ⚠️ Position não enviado pelo CS2! Usando spawn point de fallback (mapa: ${mapName}, time: ${team}, slot: ${slot}):`, position);
+    }
   }
 
   // Parse de direção

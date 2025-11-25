@@ -1,0 +1,1328 @@
+============================================
+  CS2 WEBRADAR - SERVIDOR BACKEND
+============================================
+
+Verificando Node.js...
+Node.js encontrado!
+
+Iniciando servidor...
+
+===========================================
+  CS2 WEBRADAR BACKEND - SERVIDOR ATIVO
+===========================================
+Porta: 3000
+Endpoint GSI: http://localhost:3000/webradar
+Socket.IO: http://localhost:3000/webradar/socket
+SSE: http://localhost:3000/webradar/sse
+Health Check: http://localhost:3000/health
+===========================================
+Aguardando dados do CS2...
+
+[SSE] Cliente conectado (Total: 1)
+[SSE] Cliente conectado (Total: 2)
+
+[GSI COMPLETO] Estrutura de dados recebida do CS2:
+{
+  "provider": {
+    "name": "Counter-Strike: Global Offensive",
+    "appid": 730,
+    "version": 14126,
+    "steamid": "76561198077088293",
+    "timestamp": 1764107026
+  },
+  "player": {
+    "steamid": "76561198077088293",
+    "name": "Andernoia - No Lag No Kill",
+    "activity": "menu"
+  }
+}
+
+[GSI PLAYER] Campos do jogador:
+  steamid: 76561198077088293
+  name: Andernoia - No Lag No Kill
+  activity: menu
+[Transform] RAW CS2 player data: {
+  name: 'Andernoia - No Lag No Kill',
+  team: undefined,
+  position_raw: undefined,
+  position_type: 'undefined',
+  state: undefined,
+  alive: false
+}
+[Transform] ⚠️ Position é null/undefined!
+[Transform] Local player: Andernoia - No Lag No Kill
+  Position: x=0, y=0, z=0
+  Health: 0, Alive: false
+  Team: undefined, State: undefined
+[GSI] Dados transformados - Mapa: N/A - Total de jogadores: 1
+      Local: Andernoia - No Lag No Kill | Outros: 0
+
+[GSI COMPLETO] Estrutura de dados recebida do CS2:
+{
+  "provider": {
+    "name": "Counter-Strike: Global Offensive",
+    "appid": 730,
+    "version": 14126,
+    "steamid": "76561198077088293",
+    "timestamp": 1764107034
+  },
+  "map": {
+    "mode": "competitive",
+    "name": "de_inferno",
+    "phase": "warmup",
+    "round": 0,
+    "team_ct": {
+      "score": 0,
+      "consecutive_round_losses": 0,
+      "timeouts_remaining": 1,
+      "matches_won_this_series": 0
+    },
+    "team_t": {
+      "score": 0,
+      "consecutive_round_losses": 0,
+      "timeouts_remaining": 1,
+      "matches_won_this_series": 0
+    },
+    "num_matches_to_win_series": 0
+  },
+  "previously": {
+    "player": true
+  }
+}
+[Transform] PlayerData é null! isLocal=true
+[Transform] ⚠️  Local player é null/undefined!
+  gsiData.player: undefined
+[Transform] ⚠️  Local player é null!
+[GSI] Dados transformados - Mapa: N/A - Total de jogadores: 0
+      Local: N/A | Outros: 0
+
+[GSI COMPLETO] Estrutura de dados recebida do CS2:
+{
+  "provider": {
+    "name": "Counter-Strike: Global Offensive",
+    "appid": 730,
+    "version": 14126,
+    "steamid": "76561198077088293",
+    "timestamp": 1764107037
+  },
+  "map": {
+    "mode": "competitive",
+    "name": "de_inferno",
+    "phase": "live",
+    "round": 0,
+    "team_ct": {
+      "score": 0,
+      "consecutive_round_losses": 1,
+      "timeouts_remaining": 1,
+      "matches_won_this_series": 0
+    },
+    "team_t": {
+      "score": 0,
+      "consecutive_round_losses": 1,
+      "timeouts_remaining": 1,
+      "matches_won_this_series": 0
+    },
+    "num_matches_to_win_series": 0
+  },
+  "round": {
+    "phase": "freezetime"
+  },
+  "player": {
+    "steamid": "76561198077088293",
+    "name": "Andernoia - No Lag No Kill",
+    "observer_slot": 0,
+    "team": "CT",
+    "activity": "playing",
+    "state": {
+      "health": 100,
+      "armor": 0,
+      "helmet": false,
+      "flashed": 0,
+      "smoked": 0,
+      "burning": 0,
+      "money": 800,
+      "round_kills": 0,
+      "round_killhs": 0,
+      "equip_value": 200
+    },
+    "weapons": {
+      "weapon_0": {
+        "name": "weapon_bayonet",
+        "paintkit": "am_doppler_phase4",
+        "type": "Knife",
+        "state": "holstered"
+      },
+      "weapon_1": {
+        "name": "weapon_usp_silencer",
+        "paintkit": "soe_blue_and_gold",
+        "type": "Pistol",
+        "ammo_clip": 12,
+        "ammo_clip_max": 12,
+        "ammo_reserve": 24,
+        "state": "active"
+      }
+    },
+    "match_stats": {
+      "kills": 0,
+      "assists": 0,
+      "deaths": 0,
+      "mvps": 0,
+      "score": 0
+    }
+  },
+  "previously": {
+    "map": {
+      "phase": "warmup",
+      "team_ct": {
+        "consecutive_round_losses": 0
+      },
+      "team_t": {
+        "consecutive_round_losses": 0
+      }
+    }
+  }
+}
+
+[GSI PLAYER] Campos do jogador:
+  steamid: 76561198077088293
+  name: Andernoia - No Lag No Kill
+  observer_slot: 0
+  team: CT
+  activity: playing
+  state: {"health":100,"armor":0,"helmet":false,"flashed":0,"smoked":0,"burning":0,"money":800,"round_kills":0,"round_killhs":0,"equip_value":200}
+  weapons: {"weapon_0":{"name":"weapon_bayonet","paintkit":"am_doppler_phase4","type":"Knife","state":"holstered"},"weapon_1":{"name":"weapon_usp_silencer","paintkit":"soe_blue_and_gold","type":"Pistol","ammo_clip":12,"ammo_clip_max":12,"ammo_reserve":24,"state":"active"}}
+  match_stats: {"kills":0,"assists":0,"deaths":0,"mvps":0,"score":0}
+[Transform] RAW CS2 player data: {
+  name: 'Andernoia - No Lag No Kill',
+  team: 'CT',
+  position_raw: undefined,
+  position_type: 'undefined',
+  state: {
+    health: 100,
+    armor: 0,
+    helmet: false,
+    flashed: 0,
+    smoked: 0,
+    burning: 0,
+    money: 800,
+    round_kills: 0,
+    round_killhs: 0,
+    equip_value: 200
+  },
+  alive: true
+}
+[Transform] ⚠️ Position é null/undefined!
+[Transform] Local player: Andernoia - No Lag No Kill
+  Position: x=0, y=0, z=0
+  Health: 100, Alive: true
+  Team: CT, State: undefined
+[GSI] Dados transformados - Mapa: de_inferno - Total de jogadores: 1
+      Local: Andernoia - No Lag No Kill | Outros: 0
+
+[GSI COMPLETO] Estrutura de dados recebida do CS2:
+{
+  "provider": {
+    "name": "Counter-Strike: Global Offensive",
+    "appid": 730,
+    "version": 14126,
+    "steamid": "76561198077088293",
+    "timestamp": 1764107047
+  },
+  "map": {
+    "mode": "competitive",
+    "name": "de_inferno",
+    "phase": "live",
+    "round": 0,
+    "team_ct": {
+      "score": 0,
+      "consecutive_round_losses": 1,
+      "timeouts_remaining": 1,
+      "matches_won_this_series": 0
+    },
+    "team_t": {
+      "score": 0,
+      "consecutive_round_losses": 1,
+      "timeouts_remaining": 1,
+      "matches_won_this_series": 0
+    },
+    "num_matches_to_win_series": 0
+  },
+  "round": {
+    "phase": "freezetime"
+  },
+  "player": {
+    "steamid": "76561198077088293",
+    "name": "Andernoia - No Lag No Kill",
+    "observer_slot": 0,
+    "team": "CT",
+    "activity": "playing",
+    "state": {
+      "health": 100,
+      "armor": 0,
+      "helmet": false,
+      "flashed": 0,
+      "smoked": 0,
+      "burning": 0,
+      "money": 800,
+      "round_kills": 0,
+      "round_killhs": 0,
+      "equip_value": 200
+    },
+    "weapons": {
+      "weapon_0": {
+        "name": "weapon_bayonet",
+        "paintkit": "am_doppler_phase4",
+        "type": "Knife",
+        "state": "active"
+      },
+      "weapon_1": {
+        "name": "weapon_usp_silencer",
+        "paintkit": "soe_blue_and_gold",
+        "type": "Pistol",
+        "ammo_clip": 12,
+        "ammo_clip_max": 12,
+        "ammo_reserve": 24,
+        "state": "holstered"
+      }
+    },
+    "match_stats": {
+      "kills": 0,
+      "assists": 0,
+      "deaths": 0,
+      "mvps": 0,
+      "score": 0
+    }
+  },
+  "previously": {
+    "player": {
+      "weapons": {
+        "weapon_0": {
+          "state": "holstered"
+        },
+        "weapon_1": {
+          "state": "active"
+        }
+      }
+    }
+  }
+}
+
+[GSI PLAYER] Campos do jogador:
+  steamid: 76561198077088293
+  name: Andernoia - No Lag No Kill
+  observer_slot: 0
+  team: CT
+  activity: playing
+  state: {"health":100,"armor":0,"helmet":false,"flashed":0,"smoked":0,"burning":0,"money":800,"round_kills":0,"round_killhs":0,"equip_value":200}
+  weapons: {"weapon_0":{"name":"weapon_bayonet","paintkit":"am_doppler_phase4","type":"Knife","state":"active"},"weapon_1":{"name":"weapon_usp_silencer","paintkit":"soe_blue_and_gold","type":"Pistol","ammo_clip":12,"ammo_clip_max":12,"ammo_reserve":24,"state":"holstered"}}
+  match_stats: {"kills":0,"assists":0,"deaths":0,"mvps":0,"score":0}
+[Transform] RAW CS2 player data: {
+  name: 'Andernoia - No Lag No Kill',
+  team: 'CT',
+  position_raw: undefined,
+  position_type: 'undefined',
+  state: {
+    health: 100,
+    armor: 0,
+    helmet: false,
+    flashed: 0,
+    smoked: 0,
+    burning: 0,
+    money: 800,
+    round_kills: 0,
+    round_killhs: 0,
+    equip_value: 200
+  },
+  alive: true
+}
+[Transform] ⚠️ Position é null/undefined!
+[Transform] Local player: Andernoia - No Lag No Kill
+  Position: x=0, y=0, z=0
+  Health: 100, Alive: true
+  Team: CT, State: undefined
+[GSI] Dados transformados - Mapa: de_inferno - Total de jogadores: 1
+      Local: Andernoia - No Lag No Kill | Outros: 0
+
+[GSI COMPLETO] Estrutura de dados recebida do CS2:
+{
+  "provider": {
+    "name": "Counter-Strike: Global Offensive",
+    "appid": 730,
+    "version": 14126,
+    "steamid": "76561198077088293",
+    "timestamp": 1764107049
+  },
+  "map": {
+    "mode": "competitive",
+    "name": "de_inferno",
+    "phase": "live",
+    "round": 0,
+    "team_ct": {
+      "score": 0,
+      "consecutive_round_losses": 1,
+      "timeouts_remaining": 1,
+      "matches_won_this_series": 0
+    },
+    "team_t": {
+      "score": 0,
+      "consecutive_round_losses": 1,
+      "timeouts_remaining": 1,
+      "matches_won_this_series": 0
+    },
+    "num_matches_to_win_series": 0
+  },
+  "round": {
+    "phase": "freezetime"
+  },
+  "player": {
+    "steamid": "76561198077088293",
+    "name": "Andernoia - No Lag No Kill",
+    "observer_slot": 0,
+    "team": "CT",
+    "activity": "playing",
+    "state": {
+      "health": 100,
+      "armor": 0,
+      "helmet": false,
+      "flashed": 0,
+      "smoked": 0,
+      "burning": 0,
+      "money": 100,
+      "round_kills": 0,
+      "round_killhs": 0,
+      "equip_value": 700
+    },
+    "weapons": {
+      "weapon_0": {
+        "name": "weapon_bayonet",
+        "paintkit": "am_doppler_phase4",
+        "type": "Knife",
+        "state": "holstered"
+      },
+      "weapon_1": {
+        "name": "weapon_deagle",
+        "paintkit": "cu_deagle_replica",
+        "type": "Pistol",
+        "ammo_clip": 7,
+        "ammo_clip_max": 7,
+        "ammo_reserve": 35,
+        "state": "active"
+      }
+    },
+    "match_stats": {
+      "kills": 0,
+      "assists": 0,
+      "deaths": 0,
+      "mvps": 0,
+      "score": 0
+    }
+  },
+  "previously": {
+    "player": {
+      "state": {
+        "money": 800,
+        "equip_value": 200
+      },
+      "weapons": {
+        "weapon_0": {
+          "state": "active"
+        },
+        "weapon_1": {
+          "name": "weapon_usp_silencer",
+          "paintkit": "soe_blue_and_gold",
+          "ammo_clip": 12,
+          "ammo_clip_max": 12,
+          "ammo_reserve": 24,
+          "state": "holstered"
+        }
+      }
+    }
+  }
+}
+
+[GSI PLAYER] Campos do jogador:
+  steamid: 76561198077088293
+  name: Andernoia - No Lag No Kill
+  observer_slot: 0
+  team: CT
+  activity: playing
+  state: {"health":100,"armor":0,"helmet":false,"flashed":0,"smoked":0,"burning":0,"money":100,"round_kills":0,"round_killhs":0,"equip_value":700}
+  weapons: {"weapon_0":{"name":"weapon_bayonet","paintkit":"am_doppler_phase4","type":"Knife","state":"holstered"},"weapon_1":{"name":"weapon_deagle","paintkit":"cu_deagle_replica","type":"Pistol","ammo_clip":7,"ammo_clip_max":7,"ammo_reserve":35,"state":"active"}}
+  match_stats: {"kills":0,"assists":0,"deaths":0,"mvps":0,"score":0}
+[Transform] RAW CS2 player data: {
+  name: 'Andernoia - No Lag No Kill',
+  team: 'CT',
+  position_raw: undefined,
+  position_type: 'undefined',
+  state: {
+    health: 100,
+    armor: 0,
+    helmet: false,
+    flashed: 0,
+    smoked: 0,
+    burning: 0,
+    money: 100,
+    round_kills: 0,
+    round_killhs: 0,
+    equip_value: 700
+  },
+  alive: true
+}
+[Transform] ⚠️ Position é null/undefined!
+[Transform] Local player: Andernoia - No Lag No Kill
+  Position: x=0, y=0, z=0
+  Health: 100, Alive: true
+  Team: CT, State: undefined
+[GSI] Dados transformados - Mapa: de_inferno - Total de jogadores: 1
+      Local: Andernoia - No Lag No Kill | Outros: 0
+
+[GSI COMPLETO] Estrutura de dados recebida do CS2:
+{
+  "provider": {
+    "name": "Counter-Strike: Global Offensive",
+    "appid": 730,
+    "version": 14126,
+    "steamid": "76561198077088293",
+    "timestamp": 1764107050
+  },
+  "map": {
+    "mode": "competitive",
+    "name": "de_inferno",
+    "phase": "live",
+    "round": 0,
+    "team_ct": {
+      "score": 0,
+      "consecutive_round_losses": 1,
+      "timeouts_remaining": 1,
+      "matches_won_this_series": 0
+    },
+    "team_t": {
+      "score": 0,
+      "consecutive_round_losses": 1,
+      "timeouts_remaining": 1,
+      "matches_won_this_series": 0
+    },
+    "num_matches_to_win_series": 0
+  },
+  "round": {
+    "phase": "freezetime"
+  },
+  "player": {
+    "steamid": "76561198077088293",
+    "name": "Andernoia - No Lag No Kill",
+    "observer_slot": 0,
+    "team": "CT",
+    "activity": "playing",
+    "state": {
+      "health": 100,
+      "armor": 0,
+      "helmet": false,
+      "flashed": 0,
+      "smoked": 0,
+      "burning": 0,
+      "money": 100,
+      "round_kills": 0,
+      "round_killhs": 0,
+      "equip_value": 700
+    },
+    "weapons": {
+      "weapon_0": {
+        "name": "weapon_bayonet",
+        "paintkit": "am_doppler_phase4",
+        "type": "Knife",
+        "state": "active"
+      },
+      "weapon_1": {
+        "name": "weapon_deagle",
+        "paintkit": "cu_deagle_replica",
+        "type": "Pistol",
+        "ammo_clip": 7,
+        "ammo_clip_max": 7,
+        "ammo_reserve": 35,
+        "state": "holstered"
+      }
+    },
+    "match_stats": {
+      "kills": 0,
+      "assists": 0,
+      "deaths": 0,
+      "mvps": 0,
+      "score": 0
+    }
+  },
+  "previously": {
+    "player": {
+      "weapons": {
+        "weapon_0": {
+          "state": "holstered"
+        },
+        "weapon_1": {
+          "state": "active"
+        }
+      }
+    }
+  }
+}
+
+[GSI PLAYER] Campos do jogador:
+  steamid: 76561198077088293
+  name: Andernoia - No Lag No Kill
+  observer_slot: 0
+  team: CT
+  activity: playing
+  state: {"health":100,"armor":0,"helmet":false,"flashed":0,"smoked":0,"burning":0,"money":100,"round_kills":0,"round_killhs":0,"equip_value":700}
+  weapons: {"weapon_0":{"name":"weapon_bayonet","paintkit":"am_doppler_phase4","type":"Knife","state":"active"},"weapon_1":{"name":"weapon_deagle","paintkit":"cu_deagle_replica","type":"Pistol","ammo_clip":7,"ammo_clip_max":7,"ammo_reserve":35,"state":"holstered"}}
+  match_stats: {"kills":0,"assists":0,"deaths":0,"mvps":0,"score":0}
+[Transform] RAW CS2 player data: {
+  name: 'Andernoia - No Lag No Kill',
+  team: 'CT',
+  position_raw: undefined,
+  position_type: 'undefined',
+  state: {
+    health: 100,
+    armor: 0,
+    helmet: false,
+    flashed: 0,
+    smoked: 0,
+    burning: 0,
+    money: 100,
+    round_kills: 0,
+    round_killhs: 0,
+    equip_value: 700
+  },
+  alive: true
+}
+[Transform] ⚠️ Position é null/undefined!
+[Transform] Local player: Andernoia - No Lag No Kill
+  Position: x=0, y=0, z=0
+  Health: 100, Alive: true
+  Team: CT, State: undefined
+[GSI] Dados transformados - Mapa: de_inferno - Total de jogadores: 1
+      Local: Andernoia - No Lag No Kill | Outros: 0
+[SSE] Cliente desconectado (Total: 1)
+[SSE] Cliente conectado (Total: 2)
+
+[GSI COMPLETO] Estrutura de dados recebida do CS2:
+{
+  "provider": {
+    "name": "Counter-Strike: Global Offensive",
+    "appid": 730,
+    "version": 14126,
+    "steamid": "76561198077088293",
+    "timestamp": 1764107063
+  },
+  "map": {
+    "mode": "competitive",
+    "name": "de_inferno",
+    "phase": "live",
+    "round": 0,
+    "team_ct": {
+      "score": 0,
+      "consecutive_round_losses": 1,
+      "timeouts_remaining": 1,
+      "matches_won_this_series": 0
+    },
+    "team_t": {
+      "score": 0,
+      "consecutive_round_losses": 1,
+      "timeouts_remaining": 1,
+      "matches_won_this_series": 0
+    },
+    "num_matches_to_win_series": 0
+  },
+  "round": {
+    "phase": "live"
+  },
+  "player": {
+    "steamid": "76561198077088293",
+    "name": "Andernoia - No Lag No Kill",
+    "observer_slot": 0,
+    "team": "CT",
+    "activity": "playing",
+    "state": {
+      "health": 100,
+      "armor": 0,
+      "helmet": false,
+      "flashed": 0,
+      "smoked": 0,
+      "burning": 0,
+      "money": 100,
+      "round_kills": 0,
+      "round_killhs": 0,
+      "equip_value": 700
+    },
+    "weapons": {
+      "weapon_0": {
+        "name": "weapon_bayonet",
+        "paintkit": "am_doppler_phase4",
+        "type": "Knife",
+        "state": "active"
+      },
+      "weapon_1": {
+        "name": "weapon_deagle",
+        "paintkit": "cu_deagle_replica",
+        "type": "Pistol",
+        "ammo_clip": 7,
+        "ammo_clip_max": 7,
+        "ammo_reserve": 35,
+        "state": "holstered"
+      }
+    },
+    "match_stats": {
+      "kills": 0,
+      "assists": 0,
+      "deaths": 0,
+      "mvps": 0,
+      "score": 0
+    }
+  },
+  "previously": {
+    "round": {
+      "phase": "freezetime"
+    }
+  }
+}
+
+[GSI PLAYER] Campos do jogador:
+  steamid: 76561198077088293
+  name: Andernoia - No Lag No Kill
+  observer_slot: 0
+  team: CT
+  activity: playing
+  state: {"health":100,"armor":0,"helmet":false,"flashed":0,"smoked":0,"burning":0,"money":100,"round_kills":0,"round_killhs":0,"equip_value":700}
+  weapons: {"weapon_0":{"name":"weapon_bayonet","paintkit":"am_doppler_phase4","type":"Knife","state":"active"},"weapon_1":{"name":"weapon_deagle","paintkit":"cu_deagle_replica","type":"Pistol","ammo_clip":7,"ammo_clip_max":7,"ammo_reserve":35,"state":"holstered"}}
+  match_stats: {"kills":0,"assists":0,"deaths":0,"mvps":0,"score":0}
+[Transform] RAW CS2 player data: {
+  name: 'Andernoia - No Lag No Kill',
+  team: 'CT',
+  position_raw: undefined,
+  position_type: 'undefined',
+  state: {
+    health: 100,
+    armor: 0,
+    helmet: false,
+    flashed: 0,
+    smoked: 0,
+    burning: 0,
+    money: 100,
+    round_kills: 0,
+    round_killhs: 0,
+    equip_value: 700
+  },
+  alive: true
+}
+[Transform] ⚠️ Position é null/undefined!
+[Transform] Local player: Andernoia - No Lag No Kill
+  Position: x=0, y=0, z=0
+  Health: 100, Alive: true
+  Team: CT, State: undefined
+[GSI] Dados transformados - Mapa: de_inferno - Total de jogadores: 1
+      Local: Andernoia - No Lag No Kill | Outros: 0
+
+[GSI COMPLETO] Estrutura de dados recebida do CS2:
+{
+  "provider": {
+    "name": "Counter-Strike: Global Offensive",
+    "appid": 730,
+    "version": 14126,
+    "steamid": "76561198077088293",
+    "timestamp": 1764107074
+  },
+  "map": {
+    "mode": "competitive",
+    "name": "de_inferno",
+    "phase": "live",
+    "round": 0,
+    "team_ct": {
+      "score": 0,
+      "consecutive_round_losses": 1,
+      "timeouts_remaining": 1,
+      "matches_won_this_series": 0
+    },
+    "team_t": {
+      "score": 0,
+      "consecutive_round_losses": 1,
+      "timeouts_remaining": 1,
+      "matches_won_this_series": 0
+    },
+    "num_matches_to_win_series": 0
+  },
+  "round": {
+    "phase": "live"
+  },
+  "player": {
+    "steamid": "76561198077088293",
+    "name": "Andernoia - No Lag No Kill",
+    "observer_slot": 0,
+    "team": "CT",
+    "activity": "playing",
+    "state": {
+      "health": 100,
+      "armor": 0,
+      "helmet": false,
+      "flashed": 0,
+      "smoked": 0,
+      "burning": 0,
+      "money": 100,
+      "round_kills": 0,
+      "round_killhs": 0,
+      "equip_value": 700
+    },
+    "weapons": {
+      "weapon_0": {
+        "name": "weapon_bayonet",
+        "paintkit": "am_doppler_phase4",
+        "type": "Knife",
+        "state": "holstered"
+      },
+      "weapon_1": {
+        "name": "weapon_deagle",
+        "paintkit": "cu_deagle_replica",
+        "type": "Pistol",
+        "ammo_clip": 7,
+        "ammo_clip_max": 7,
+        "ammo_reserve": 35,
+        "state": "active"
+      }
+    },
+    "match_stats": {
+      "kills": 0,
+      "assists": 0,
+      "deaths": 0,
+      "mvps": 0,
+      "score": 0
+    }
+  },
+  "previously": {
+    "player": {
+      "weapons": {
+        "weapon_0": {
+          "state": "active"
+        },
+        "weapon_1": {
+          "state": "holstered"
+        }
+      }
+    }
+  }
+}
+
+[GSI PLAYER] Campos do jogador:
+  steamid: 76561198077088293
+  name: Andernoia - No Lag No Kill
+  observer_slot: 0
+  team: CT
+  activity: playing
+  state: {"health":100,"armor":0,"helmet":false,"flashed":0,"smoked":0,"burning":0,"money":100,"round_kills":0,"round_killhs":0,"equip_value":700}
+  weapons: {"weapon_0":{"name":"weapon_bayonet","paintkit":"am_doppler_phase4","type":"Knife","state":"holstered"},"weapon_1":{"name":"weapon_deagle","paintkit":"cu_deagle_replica","type":"Pistol","ammo_clip":7,"ammo_clip_max":7,"ammo_reserve":35,"state":"active"}}
+  match_stats: {"kills":0,"assists":0,"deaths":0,"mvps":0,"score":0}
+[Transform] RAW CS2 player data: {
+  name: 'Andernoia - No Lag No Kill',
+  team: 'CT',
+  position_raw: undefined,
+  position_type: 'undefined',
+  state: {
+    health: 100,
+    armor: 0,
+    helmet: false,
+    flashed: 0,
+    smoked: 0,
+    burning: 0,
+    money: 100,
+    round_kills: 0,
+    round_killhs: 0,
+    equip_value: 700
+  },
+  alive: true
+}
+[Transform] ⚠️ Position é null/undefined!
+[Transform] Local player: Andernoia - No Lag No Kill
+  Position: x=0, y=0, z=0
+  Health: 100, Alive: true
+  Team: CT, State: undefined
+[GSI] Dados transformados - Mapa: de_inferno - Total de jogadores: 1
+      Local: Andernoia - No Lag No Kill | Outros: 0
+
+[GSI COMPLETO] Estrutura de dados recebida do CS2:
+{
+  "provider": {
+    "name": "Counter-Strike: Global Offensive",
+    "appid": 730,
+    "version": 14126,
+    "steamid": "76561198077088293",
+    "timestamp": 1764107075
+  },
+  "map": {
+    "mode": "competitive",
+    "name": "de_inferno",
+    "phase": "live",
+    "round": 0,
+    "team_ct": {
+      "score": 0,
+      "consecutive_round_losses": 1,
+      "timeouts_remaining": 1,
+      "matches_won_this_series": 0
+    },
+    "team_t": {
+      "score": 0,
+      "consecutive_round_losses": 1,
+      "timeouts_remaining": 1,
+      "matches_won_this_series": 0
+    },
+    "num_matches_to_win_series": 0
+  },
+  "round": {
+    "phase": "live"
+  },
+  "player": {
+    "steamid": "76561198077088293",
+    "name": "Andernoia - No Lag No Kill",
+    "observer_slot": 0,
+    "team": "CT",
+    "activity": "playing",
+    "state": {
+      "health": 100,
+      "armor": 0,
+      "helmet": false,
+      "flashed": 0,
+      "smoked": 0,
+      "burning": 0,
+      "money": 100,
+      "round_kills": 0,
+      "round_killhs": 0,
+      "equip_value": 700
+    },
+    "weapons": {
+      "weapon_0": {
+        "name": "weapon_bayonet",
+        "paintkit": "am_doppler_phase4",
+        "type": "Knife",
+        "state": "active"
+      },
+      "weapon_1": {
+        "name": "weapon_deagle",
+        "paintkit": "cu_deagle_replica",
+        "type": "Pistol",
+        "ammo_clip": 7,
+        "ammo_clip_max": 7,
+        "ammo_reserve": 35,
+        "state": "holstered"
+      }
+    },
+    "match_stats": {
+      "kills": 0,
+      "assists": 0,
+      "deaths": 0,
+      "mvps": 0,
+      "score": 0
+    }
+  },
+  "previously": {
+    "player": {
+      "weapons": {
+        "weapon_0": {
+          "state": "holstered"
+        },
+        "weapon_1": {
+          "state": "active"
+        }
+      }
+    }
+  }
+}
+
+[GSI PLAYER] Campos do jogador:
+  steamid: 76561198077088293
+  name: Andernoia - No Lag No Kill
+  observer_slot: 0
+  team: CT
+  activity: playing
+  state: {"health":100,"armor":0,"helmet":false,"flashed":0,"smoked":0,"burning":0,"money":100,"round_kills":0,"round_killhs":0,"equip_value":700}
+  weapons: {"weapon_0":{"name":"weapon_bayonet","paintkit":"am_doppler_phase4","type":"Knife","state":"active"},"weapon_1":{"name":"weapon_deagle","paintkit":"cu_deagle_replica","type":"Pistol","ammo_clip":7,"ammo_clip_max":7,"ammo_reserve":35,"state":"holstered"}}
+  match_stats: {"kills":0,"assists":0,"deaths":0,"mvps":0,"score":0}
+[Transform] RAW CS2 player data: {
+  name: 'Andernoia - No Lag No Kill',
+  team: 'CT',
+  position_raw: undefined,
+  position_type: 'undefined',
+  state: {
+    health: 100,
+    armor: 0,
+    helmet: false,
+    flashed: 0,
+    smoked: 0,
+    burning: 0,
+    money: 100,
+    round_kills: 0,
+    round_killhs: 0,
+    equip_value: 700
+  },
+  alive: true
+}
+[Transform] ⚠️ Position é null/undefined!
+[Transform] Local player: Andernoia - No Lag No Kill
+  Position: x=0, y=0, z=0
+  Health: 100, Alive: true
+  Team: CT, State: undefined
+[GSI] Dados transformados - Mapa: de_inferno - Total de jogadores: 1
+      Local: Andernoia - No Lag No Kill | Outros: 0
+
+[GSI COMPLETO] Estrutura de dados recebida do CS2:
+{
+  "provider": {
+    "name": "Counter-Strike: Global Offensive",
+    "appid": 730,
+    "version": 14126,
+    "steamid": "76561198077088293",
+    "timestamp": 1764107081
+  },
+  "map": {
+    "mode": "competitive",
+    "name": "de_inferno",
+    "phase": "live",
+    "round": 0,
+    "team_ct": {
+      "score": 0,
+      "consecutive_round_losses": 1,
+      "timeouts_remaining": 1,
+      "matches_won_this_series": 0
+    },
+    "team_t": {
+      "score": 0,
+      "consecutive_round_losses": 1,
+      "timeouts_remaining": 1,
+      "matches_won_this_series": 0
+    },
+    "num_matches_to_win_series": 0
+  },
+  "round": {
+    "phase": "live"
+  },
+  "player": {
+    "steamid": "76561198077088293",
+    "name": "Andernoia - No Lag No Kill",
+    "observer_slot": 0,
+    "team": "CT",
+    "activity": "playing",
+    "state": {
+      "health": 100,
+      "armor": 0,
+      "helmet": false,
+      "flashed": 0,
+      "smoked": 0,
+      "burning": 0,
+      "money": 100,
+      "round_kills": 0,
+      "round_killhs": 0,
+      "equip_value": 700
+    },
+    "weapons": {
+      "weapon_0": {
+        "name": "weapon_bayonet",
+        "paintkit": "am_doppler_phase4",
+        "type": "Knife",
+        "state": "holstered"
+      },
+      "weapon_1": {
+        "name": "weapon_deagle",
+        "paintkit": "cu_deagle_replica",
+        "type": "Pistol",
+        "ammo_clip": 7,
+        "ammo_clip_max": 7,
+        "ammo_reserve": 35,
+        "state": "active"
+      }
+    },
+    "match_stats": {
+      "kills": 0,
+      "assists": 0,
+      "deaths": 0,
+      "mvps": 0,
+      "score": 0
+    }
+  },
+  "previously": {
+    "player": {
+      "weapons": {
+        "weapon_0": {
+          "state": "active"
+        },
+        "weapon_1": {
+          "state": "holstered"
+        }
+      }
+    }
+  }
+}
+
+[GSI PLAYER] Campos do jogador:
+  steamid: 76561198077088293
+  name: Andernoia - No Lag No Kill
+  observer_slot: 0
+  team: CT
+  activity: playing
+  state: {"health":100,"armor":0,"helmet":false,"flashed":0,"smoked":0,"burning":0,"money":100,"round_kills":0,"round_killhs":0,"equip_value":700}
+  weapons: {"weapon_0":{"name":"weapon_bayonet","paintkit":"am_doppler_phase4","type":"Knife","state":"holstered"},"weapon_1":{"name":"weapon_deagle","paintkit":"cu_deagle_replica","type":"Pistol","ammo_clip":7,"ammo_clip_max":7,"ammo_reserve":35,"state":"active"}}
+  match_stats: {"kills":0,"assists":0,"deaths":0,"mvps":0,"score":0}
+[Transform] RAW CS2 player data: {
+  name: 'Andernoia - No Lag No Kill',
+  team: 'CT',
+  position_raw: undefined,
+  position_type: 'undefined',
+  state: {
+    health: 100,
+    armor: 0,
+    helmet: false,
+    flashed: 0,
+    smoked: 0,
+    burning: 0,
+    money: 100,
+    round_kills: 0,
+    round_killhs: 0,
+    equip_value: 700
+  },
+  alive: true
+}
+[Transform] ⚠️ Position é null/undefined!
+[Transform] Local player: Andernoia - No Lag No Kill
+  Position: x=0, y=0, z=0
+  Health: 100, Alive: true
+  Team: CT, State: undefined
+[GSI] Dados transformados - Mapa: de_inferno - Total de jogadores: 1
+      Local: Andernoia - No Lag No Kill | Outros: 0
+
+[GSI COMPLETO] Estrutura de dados recebida do CS2:
+{
+  "provider": {
+    "name": "Counter-Strike: Global Offensive",
+    "appid": 730,
+    "version": 14126,
+    "steamid": "76561198077088293",
+    "timestamp": 1764107082
+  },
+  "map": {
+    "mode": "competitive",
+    "name": "de_inferno",
+    "phase": "live",
+    "round": 0,
+    "team_ct": {
+      "score": 0,
+      "consecutive_round_losses": 1,
+      "timeouts_remaining": 1,
+      "matches_won_this_series": 0
+    },
+    "team_t": {
+      "score": 0,
+      "consecutive_round_losses": 1,
+      "timeouts_remaining": 1,
+      "matches_won_this_series": 0
+    },
+    "num_matches_to_win_series": 0
+  },
+  "round": {
+    "phase": "live"
+  },
+  "player": {
+    "steamid": "76561198077088293",
+    "name": "Andernoia - No Lag No Kill",
+    "observer_slot": 0,
+    "team": "CT",
+    "activity": "playing",
+    "state": {
+      "health": 100,
+      "armor": 0,
+      "helmet": false,
+      "flashed": 0,
+      "smoked": 0,
+      "burning": 0,
+      "money": 100,
+      "round_kills": 0,
+      "round_killhs": 0,
+      "equip_value": 700
+    },
+    "weapons": {
+      "weapon_0": {
+        "name": "weapon_bayonet",
+        "paintkit": "am_doppler_phase4",
+        "type": "Knife",
+        "state": "active"
+      },
+      "weapon_1": {
+        "name": "weapon_deagle",
+        "paintkit": "cu_deagle_replica",
+        "type": "Pistol",
+        "ammo_clip": 7,
+        "ammo_clip_max": 7,
+        "ammo_reserve": 35,
+        "state": "holstered"
+      }
+    },
+    "match_stats": {
+      "kills": 0,
+      "assists": 0,
+      "deaths": 0,
+      "mvps": 0,
+      "score": 0
+    }
+  },
+  "previously": {
+    "player": {
+      "weapons": {
+        "weapon_0": {
+          "state": "holstered"
+        },
+        "weapon_1": {
+          "state": "active"
+        }
+      }
+    }
+  }
+}
+
+[GSI PLAYER] Campos do jogador:
+  steamid: 76561198077088293
+  name: Andernoia - No Lag No Kill
+  observer_slot: 0
+  team: CT
+  activity: playing
+  state: {"health":100,"armor":0,"helmet":false,"flashed":0,"smoked":0,"burning":0,"money":100,"round_kills":0,"round_killhs":0,"equip_value":700}
+  weapons: {"weapon_0":{"name":"weapon_bayonet","paintkit":"am_doppler_phase4","type":"Knife","state":"active"},"weapon_1":{"name":"weapon_deagle","paintkit":"cu_deagle_replica","type":"Pistol","ammo_clip":7,"ammo_clip_max":7,"ammo_reserve":35,"state":"holstered"}}
+  match_stats: {"kills":0,"assists":0,"deaths":0,"mvps":0,"score":0}
+[Transform] RAW CS2 player data: {
+  name: 'Andernoia - No Lag No Kill',
+  team: 'CT',
+  position_raw: undefined,
+  position_type: 'undefined',
+  state: {
+    health: 100,
+    armor: 0,
+    helmet: false,
+    flashed: 0,
+    smoked: 0,
+    burning: 0,
+    money: 100,
+    round_kills: 0,
+    round_killhs: 0,
+    equip_value: 700
+  },
+  alive: true
+}
+[Transform] ⚠️ Position é null/undefined!
+[Transform] Local player: Andernoia - No Lag No Kill
+  Position: x=0, y=0, z=0
+  Health: 100, Alive: true
+  Team: CT, State: undefined
+[GSI] Dados transformados - Mapa: de_inferno - Total de jogadores: 1
+      Local: Andernoia - No Lag No Kill | Outros: 0
+
+[GSI COMPLETO] Estrutura de dados recebida do CS2:
+{
+  "provider": {
+    "name": "Counter-Strike: Global Offensive",
+    "appid": 730,
+    "version": 14126,
+    "steamid": "76561198077088293",
+    "timestamp": 1764107113
+  },
+  "map": {
+    "mode": "competitive",
+    "name": "de_inferno",
+    "phase": "live",
+    "round": 0,
+    "team_ct": {
+      "score": 0,
+      "consecutive_round_losses": 1,
+      "timeouts_remaining": 1,
+      "matches_won_this_series": 0
+    },
+    "team_t": {
+      "score": 0,
+      "consecutive_round_losses": 1,
+      "timeouts_remaining": 1,
+      "matches_won_this_series": 0
+    },
+    "num_matches_to_win_series": 0
+  },
+  "round": {
+    "phase": "live"
+  },
+  "player": {
+    "steamid": "76561198077088293",
+    "name": "Andernoia - No Lag No Kill",
+    "observer_slot": 0,
+    "team": "CT",
+    "activity": "playing",
+    "state": {
+      "health": 100,
+      "armor": 0,
+      "helmet": false,
+      "flashed": 0,
+      "smoked": 0,
+      "burning": 0,
+      "money": 100,
+      "round_kills": 0,
+      "round_killhs": 0,
+      "equip_value": 700
+    },
+    "weapons": {
+      "weapon_0": {
+        "name": "weapon_bayonet",
+        "paintkit": "am_doppler_phase4",
+        "type": "Knife",
+        "state": "active"
+      },
+      "weapon_1": {
+        "name": "weapon_deagle",
+        "paintkit": "cu_deagle_replica",
+        "type": "Pistol",
+        "ammo_clip": 7,
+        "ammo_clip_max": 7,
+        "ammo_reserve": 35,
+        "state": "holstered"
+      }
+    },
+    "match_stats": {
+      "kills": 0,
+      "assists": 0,
+      "deaths": 0,
+      "mvps": 0,
+      "score": 0
+    }
+  }
+}
+
+[GSI PLAYER] Campos do jogador:
+  steamid: 76561198077088293
+  name: Andernoia - No Lag No Kill
+  observer_slot: 0
+  team: CT
+  activity: playing
+  state: {"health":100,"armor":0,"helmet":false,"flashed":0,"smoked":0,"burning":0,"money":100,"round_kills":0,"round_killhs":0,"equip_value":700}
+  weapons: {"weapon_0":{"name":"weapon_bayonet","paintkit":"am_doppler_phase4","type":"Knife","state":"active"},"weapon_1":{"name":"weapon_deagle","paintkit":"cu_deagle_replica","type":"Pistol","ammo_clip":7,"ammo_clip_max":7,"ammo_reserve":35,"state":"holstered"}}
+  match_stats: {"kills":0,"assists":0,"deaths":0,"mvps":0,"score":0}
+[Transform] RAW CS2 player data: {
+  name: 'Andernoia - No Lag No Kill',
+  team: 'CT',
+  position_raw: undefined,
+  position_type: 'undefined',
+  state: {
+    health: 100,
+    armor: 0,
+    helmet: false,
+    flashed: 0,
+    smoked: 0,
+    burning: 0,
+    money: 100,
+    round_kills: 0,
+    round_killhs: 0,
+    equip_value: 700
+  },
+  alive: true
+}
+[Transform] ⚠️ Position é null/undefined!
+[Transform] Local player: Andernoia - No Lag No Kill
+  Position: x=0, y=0, z=0
+  Health: 100, Alive: true
+  Team: CT, State: undefined
+[GSI] Dados transformados - Mapa: de_inferno - Total de jogadores: 1
+      Local: Andernoia - No Lag No Kill | Outros: 0
