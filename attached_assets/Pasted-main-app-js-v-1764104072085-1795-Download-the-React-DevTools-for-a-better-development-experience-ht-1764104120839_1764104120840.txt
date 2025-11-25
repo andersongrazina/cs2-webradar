@@ -1,0 +1,697 @@
+main-app.js?v=1764104072085:1795 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+use-wake-lock.tsx:6 [screen-wake-lock]: Calling `release` before `request` has no effect.
+warn @ use-wake-lock.tsx:6
+eval @ use-wake-lock.tsx:69
+eval @ page.tsx:28
+safelyCallDestroy @ react-dom.development.js:20869
+commitHookEffectListUnmount @ react-dom.development.js:21051
+invokePassiveEffectUnmountInDEV @ react-dom.development.js:24033
+invokeEffectsInDev @ react-dom.development.js:26852
+legacyCommitDoubleInvokeEffectsInDEV @ react-dom.development.js:26829
+commitDoubleInvokeEffectsInDEV @ react-dom.development.js:26816
+flushPassiveEffectsImpl @ react-dom.development.js:26514
+flushPassiveEffects @ react-dom.development.js:26438
+commitRootImpl @ react-dom.development.js:26337
+commitRoot @ react-dom.development.js:26077
+performSyncWorkOnRoot @ react-dom.development.js:24925
+flushSyncWorkAcrossRoots_impl @ react-dom.development.js:7758
+flushSyncWorkOnAllRoots @ react-dom.development.js:7718
+flushPassiveEffectsImpl @ react-dom.development.js:26518
+flushPassiveEffects @ react-dom.development.js:26438
+eval @ react-dom.development.js:26172
+workLoop @ scheduler.development.js:256
+flushWork @ scheduler.development.js:225
+performWorkUntilDeadline @ scheduler.development.js:534
+Show 19 more frames
+Show lessUnderstand this warning
+GameProvider.tsx:29 SSE connection has been established.
+GameProvider.tsx:35 [SSE Data] Recebido: {map: '', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+GameProvider.tsx:35 [SSE Data] Recebido: {map: '', localPlayer: undefined, localPlayerPos: undefined, totalPlayers: 0, bombState: 'unknown'}bombState: "unknown"localPlayer: undefinedlocalPlayerPos: undefinedmap: ""totalPlayers: 0[[Prototype]]: Object
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+warn-once.js:16 Image with src "/maps/de_dust2/radar.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+warnOnce @ warn-once.js:16
+eval @ image-component.js:90
+Promise.then
+handleLoading @ image-component.js:37
+onLoad @ image-component.js:201
+callCallback @ react-dom.development.js:20565
+invokeGuardedCallbackImpl @ react-dom.development.js:20614
+invokeGuardedCallback @ react-dom.development.js:20689
+invokeGuardedCallbackAndCatchFirstError @ react-dom.development.js:20703
+executeDispatch @ react-dom.development.js:32128
+processDispatchQueueItemsInOrder @ react-dom.development.js:32160
+processDispatchQueue @ react-dom.development.js:32173
+dispatchEventsForPlugins @ react-dom.development.js:32184
+eval @ react-dom.development.js:32374
+batchedUpdates$1 @ react-dom.development.js:24953
+batchedUpdates @ react-dom.development.js:28844
+dispatchEventForPluginEventSystem @ react-dom.development.js:32373
+dispatchEvent @ react-dom.development.js:30141
+load
+addEventBubbleListener @ react-dom.development.js:30361
+addTrappedEventListener @ react-dom.development.js:32277
+listenToNonDelegatedEvent @ react-dom.development.js:32199
+setInitialProperties @ react-dom.development.js:33709
+finalizeInitialChildren @ react-dom.development.js:35515
+completeWork @ react-dom.development.js:19782
+completeUnitOfWork @ react-dom.development.js:25963
+performUnitOfWork @ react-dom.development.js:25759
+workLoopSync @ react-dom.development.js:25464
+renderRootSync @ react-dom.development.js:25419
+performConcurrentWorkOnRoot @ react-dom.development.js:24504
+workLoop @ scheduler.development.js:256
+flushWork @ scheduler.development.js:225
+performWorkUntilDeadline @ scheduler.development.js:534
+Show 31 more frames
+Show lessUnderstand this warning
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: 'Andernoia - No Lag No Kill', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: 'Andernoia - No Lag No Kill', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: '𝐀𝐧𝐚𝐢𝐕', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: '𝐀𝐧𝐚𝐢𝐕', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: '𝐀𝐧𝐚𝐢𝐕', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: '𝐀𝐧𝐚𝐢𝐕', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: '𝐀𝐧𝐚𝐢𝐕', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: '𝐀𝐧𝐚𝐢𝐕', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: '𝐀𝐧𝐚𝐢𝐕', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: '𝐀𝐧𝐚𝐢𝐕', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: '𝐀𝐧𝐚𝐢𝐕', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: '𝐀𝐧𝐚𝐢𝐕', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: '𝐀𝐧𝐚𝐢𝐕', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: '𝐀𝐧𝐚𝐢𝐕', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: '𝐀𝐧𝐚𝐢𝐕', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: '𝐀𝐧𝐚𝐢𝐕', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: '𝐀𝐧𝐚𝐢𝐕', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: '𝐀𝐧𝐚𝐢𝐕', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: '𝐀𝐧𝐚𝐢𝐕', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: '𝐀𝐧𝐚𝐢𝐕', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: '𝐀𝐧𝐚𝐢𝐕', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: '𝐀𝐧𝐚𝐢𝐕', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: '𝐀𝐧𝐚𝐢𝐕', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: '𝐀𝐧𝐚𝐢𝐕', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: '𝐀𝐧𝐚𝐢𝐕', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: '𝐀𝐧𝐚𝐢𝐕', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: '𝐀𝐧𝐚𝐢𝐕', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: '𝐀𝐧𝐚𝐢𝐕', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: '𝐀𝐧𝐚𝐢𝐕', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: '𝐀𝐧𝐚𝐢𝐕', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: '𝐀𝐧𝐚𝐢𝐕', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: '𝐀𝐧𝐚𝐢𝐕', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: '𝐀𝐧𝐚𝐢𝐕', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: '𝐀𝐧𝐚𝐢𝐕', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: '𝐀𝐧𝐚𝐢𝐕', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: '𝐀𝐧𝐚𝐢𝐕', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: '𝐀𝐧𝐚𝐢𝐕', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: '𝐀𝐧𝐚𝐢𝐕', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: '𝐀𝐧𝐚𝐢𝐕', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: '𝐀𝐧𝐚𝐢𝐕', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+GameProvider.tsx:35 [SSE Data] Recebido: {map: 'de_dust2', localPlayer: '𝐀𝐧𝐚𝐢𝐕', localPlayerPos: {…}, totalPlayers: 0, bombState: 'unknown'}
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: '𝐀𝐧𝐚𝐢𝐕', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1
+RadarMain.tsx:117 [RadarMain] Total players to filter: 1 {localPlayer: '𝐀𝐧𝐚𝐢𝐕', otherPlayers: 0}
+RadarMain.tsx:123 [RadarMain] Filtered to valid objects: 1 players
+RadarMain.tsx:165 [RadarMain] Jogadores a renderizar no radar: 1

@@ -36,8 +36,10 @@ export const GameProvider = ({ children }: { children: React.ReactNode }) => {
         map: gameData?.map,
         localPlayer: gameData?.local_player?.nickname,
         localPlayerPos: gameData?.local_player?.position,
+        localPlayerHealth: gameData?.local_player?.health,
         totalPlayers: gameData?.players?.length || 0,
-        bombState: gameData?.bomb?.state
+        bombState: gameData?.bomb?.state,
+        fullLocalPlayer: JSON.stringify(gameData?.local_player)
       });
 
       const mapName =

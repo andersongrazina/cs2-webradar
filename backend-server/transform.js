@@ -24,7 +24,13 @@ function transformGSIData(gsiData) {
   
   // Debug
   if (localPlayer) {
-    console.log(`[Transform] Local player: ${localPlayer.nickname} | pos: ${JSON.stringify(localPlayer.position)} | health: ${localPlayer.health} | alive: ${localPlayer.alive}`);
+    console.log(`[Transform] Local player: ${localPlayer.nickname}`);
+    console.log(`  Position: x=${localPlayer.position?.x}, y=${localPlayer.position?.y}, z=${localPlayer.position?.z}`);
+    console.log(`  Health: ${localPlayer.health}, Alive: ${localPlayer.alive}`);
+    console.log(`  Team: ${localPlayer.team}, State: ${localPlayer.state}`);
+  } else {
+    console.log(`[Transform] ⚠️  Local player é null/undefined!`);
+    console.log(`  gsiData.player:`, gsiData.player);
   }
   
   // Pega todos os outros jogadores (se houver)
