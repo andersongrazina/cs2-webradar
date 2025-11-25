@@ -1,12 +1,14 @@
 /**
  * Transforma dados brutos do CS2 GSI para o formato esperado pelo frontend
+ * SEMPRE retorna um objeto válido, mesmo que incompleto
  */
 function transformGSIData(gsiData) {
+  // Retorna objeto vazio se não houver dados
   if (!gsiData || typeof gsiData !== 'object') {
-    return null;
+    return getDefaultGameData();
   }
 
-  // Se já está no formato transformado, retorna
+  // Se já está no formato transformado e válido, retorna
   if (gsiData.local_player && Array.isArray(gsiData.players)) {
     return gsiData;
   }
@@ -14,8 +16,11 @@ function transformGSIData(gsiData) {
   // Transforma do formato GSI do CS2
   const mapName = gsiData.map?.name || '';
   
+  // Pega o portador da bomba (para marcar nos dados)
+  const bombCarrier = gsiData.bomb?.player || null;
+  
   // Pega o jogador local
-  const localPlayer = transformPlayer(gsiData.player, true);
+  const localPlayer = transformPlayer(gsiData.player, true, 0, bombCarrier);
   
   // Pega todos os outros jogadores (se houver)
   let allPlayers = [];
@@ -23,7 +28,13 @@ function transformGSIData(gsiData) {
     // GSI envia jogadores como um objeto com keys numéricas
     allPlayers = Object.values(gsiData.players)
       .filter(p => p && p.steamid !== gsiData.player?.steamid)
-      .map((p, index) => transformPlayer(p, false, index));
+      .map((p, index) => transformPlayer(p, false, index + 1, bombCarrier))
+      .filter(p => p !== null); // Remove qualquer jogador null
+  }
+
+  // Garante que local_player é válido
+  if (!localPlayer) {
+    return getDefaultGameData();
   }
 
   // Transforma dados da bomba
@@ -34,14 +45,34 @@ function transformGSIData(gsiData) {
     bomb: bomb,
     grenades: gsiData.grenades || {},
     local_player: localPlayer,
-    players: allPlayers
+    players: Array.isArray(allPlayers) ? allPlayers : []
+  };
+}
+
+/**
+ * Retorna um objeto gameData padrão/vazio
+ */
+function getDefaultGameData() {
+  return {
+    map: '',
+    bomb: {
+      state: 'unknown',
+      position: { x: 0, y: 0, z: 0 },
+      player: null,
+      planted_at: null,
+      defused_at: null,
+      exploded_at: null
+    },
+    grenades: {},
+    local_player: null,
+    players: []
   };
 }
 
 /**
  * Transforma dados de um jogador individual
  */
-function transformPlayer(playerData, isLocal = false, index = 0) {
+function transformPlayer(playerData, isLocal = false, index = 0, bombCarrier = null) {
   if (!playerData) {
     return null;
   }
@@ -100,51 +131,27 @@ function transformPlayer(playerData, isLocal = false, index = 0) {
   const state = playerData.state || {};
   const stats = playerData.match_stats || {};
 
+  // Converte colorString para número
+  const colorString = getPlayerColor(team, index);
+  const colorNum = parseInt(colorString.replace('#', ''), 16);
+
   return {
-    steamid: playerData.steamid || `bot_${index}`,
     index: index,
+    steamid3: parseInt(playerData.steamid?.replace(/[^\d]/g, '') || index, 10),
+    alive: (state.health || 0) > 0,
+    color: colorNum,
     nickname: playerData.name || `Player ${index}`,
     team: team,
-    color: getPlayerColor(team, index),
-    
-    // Saúde e armadura
     health: state.health || 0,
     armor: state.armor || 0,
     has_helmet: state.helmet || false,
-    
-    // Dinheiro
     money: state.money || 0,
-    
-    // Kit de desarmador
+    weapons: weapons.map(w => w.id) || [],
+    has_bomb: playerData.steamid === bombCarrier ? true : false,
     has_defuser: state.defusekit || false,
-    
-    // Armas
-    weapons: weapons,
-    
-    // Posição
+    flash_alpha: state.flashed || 0,
     position: position,
-    forward: forward,
-    
-    // Status
-    is_alive: (state.health || 0) > 0,
-    is_bot: !playerData.steamid || playerData.steamid === '0',
-    
-    // Stats da rodada
-    round_kills: state.round_kills || 0,
-    round_killhs: state.round_killhs || 0,
-    round_totaldmg: state.round_totaldmg || 0,
-    
-    // Stats gerais
-    kills: stats.kills || 0,
-    assists: stats.assists || 0,
-    deaths: stats.deaths || 0,
-    mvps: stats.mvps || 0,
-    score: stats.score || 0,
-    
-    // Status de efeitos
-    flashed: state.flashed || 0,
-    smoked: state.smoked || 0,
-    burning: state.burning || 0
+    view_angles: { x: 0, y: 0 }
   };
 }
 

@@ -15,9 +15,10 @@ function PlayersInfo({ team }: PlayersInfoProps) {
   const { gameData } = useGameContext();
 
   const players = useMemo(() => {
-    if (!gameData) return [];
+    if (!gameData || !gameData.local_player) return [];
+    if (!Array.isArray(gameData.players)) return [gameData.local_player];
 
-    return [gameData.local_player, ...gameData.players];
+    return [gameData.local_player, ...gameData.players].filter(p => p !== null && p !== undefined);
   }, [gameData]);
 
   return (
