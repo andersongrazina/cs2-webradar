@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const { createServer } = require('http');
 const { Server } = require('socket.io');
+const { transformGSIData } = require('./transform');
 
 const app = express();
 const httpServer = createServer(app);
@@ -37,15 +38,20 @@ io.on('connection', (socket) => {
 });
 
 app.post('/webradar', (req, res) => {
-  latestGameData = req.body;
+  // Transforma dados brutos do GSI para o formato do frontend
+  const transformedData = transformGSIData(req.body);
   
-  console.log(`[GSI] Dados recebidos do CS2 - Mapa: ${latestGameData?.map?.name || 'N/A'}`);
-  
-  io.emit('data', latestGameData);
-  
-  sseClients.forEach(client => {
-    client.write(`data: ${JSON.stringify(latestGameData)}\n\n`);
-  });
+  if (transformedData) {
+    latestGameData = transformedData;
+    
+    console.log(`[GSI] Dados recebidos do CS2 - Mapa: ${transformedData.map || 'N/A'} - Jogadores: ${transformedData.players.length}`);
+    
+    io.emit('data', latestGameData);
+    
+    sseClients.forEach(client => {
+      client.write(`data: ${JSON.stringify(latestGameData)}\n\n`);
+    });
+  }
   
   res.sendStatus(200);
 });
